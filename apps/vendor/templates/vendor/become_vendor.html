@@ -1,0 +1,24 @@
+{% extends 'base.html'%} {% block title %}become one of our vendors and make
+money represents{% endblock %} {% block content %}
+<h1 class="title" style="padding: 2px, border-spacing= 25px">
+  Become a vendor
+</h1>
+<form
+  action="."
+  method="POST"
+  style="border: 20px; padding: 10px; margin: auto"
+>
+  {% csrf_token %} {{ form.as_p }}
+
+  <div class="field">
+    <div class="control">
+      <button
+        class="button is-dark is-uppercase"
+        style="background-color: cyan; padding: 5px; border: 2px"
+      >
+        Sign up
+      </button>
+    </div>
+  </div>
+</form>
+{% endblock %}
